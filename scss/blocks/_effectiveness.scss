@@ -1,0 +1,12 @@
+.effectiveness {
+    padding: 15px 25px;
+    border: 1px solid black;
+
+    &__title {
+        @include font(36px, 42px, 900);
+    }
+
+    &__text {
+        max-width: 186px;
+    }
+}

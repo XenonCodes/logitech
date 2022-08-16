@@ -1,0 +1,47 @@
+.settings {
+    padding: 100px 0 240px;
+    background-color: $without-wires-bcg;
+    text-align: center;
+    align-content: center;
+
+    &__title {
+        margin: 0 0 35px;
+        text-transform: uppercase;
+
+        @include font(36px, 42px, 900);
+    }
+
+    &__text {
+        max-width: 958px;
+        margin: 0 auto 72px;
+    }
+
+    &__img {
+        margin: 0 auto;
+        max-width: 1171px;
+        min-height: 698px;
+        background-image: url(./../img/mouse-desctop.png);
+        position: relative;
+    }
+
+    &__wrp {
+        position: absolute;
+        background-color: $without-wires-num;
+        width: 749px;
+        bottom: -142px;
+        left: 50%;
+        transform: translate(-50%);
+        padding: 38px 45px 29px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 36px;
+        margin: 0 0 26px;
+    }
+
+    &__applications {
+        color: white;
+    }
+}

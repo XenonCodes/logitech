@@ -1,0 +1,44 @@
+.work-productively {
+    background-color: $work-productively-bcg;
+    text-align: center;
+    padding-bottom: 80px;
+
+    &__wrp {
+        position: relative;
+    }
+
+    &__title {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-transform: uppercase;
+
+        @include font(36px, 42px, 900);
+    }
+
+    &__img {
+        max-width: 1160px;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
+
+    &__text {
+
+
+        &::after {
+            content: "";
+            display: block;
+            margin: 49px auto 0;
+            width: 40px;
+            height: 40px;
+            transform: rotate(45deg);
+            cursor: pointer;
+
+            border-bottom: 3px solid $work-productively-arrow;
+            border-right: 3px solid $work-productively-arrow;
+        }
+    }
+}

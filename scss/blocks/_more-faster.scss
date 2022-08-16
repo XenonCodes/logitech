@@ -1,0 +1,42 @@
+.more-faster {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__img {
+        max-width: 655px;
+        max-height: 557px;
+    }
+
+    &__wrp {
+        width: 654px;
+        padding: 37px;
+        box-sizing: border-box;
+        text-align: left;
+        align-self: center;
+
+        &--align-right {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin: 0 0 28px;
+        max-width: 281px;
+
+        @include font(36px, 42px, 900);
+    }
+
+    &__text {
+        max-width: 400px;
+    }
+
+}

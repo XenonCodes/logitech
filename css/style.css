@@ -1,51 +1,8 @@
-@font-face {
-  font-family: "Manrope";
-  src: url("../fonts/Manrope-Regular.ttf") format("ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Manrope";
-  src: url("../fonts/Manrope-Medium.ttf") format("ttf");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Manrope";
-  src: url("../fonts/Manrope-SemiBold.ttf") format("ttf");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Manrope";
-  src: url("../fonts/Manrope-Bold.ttf") format("ttf");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Manrope";
-  src: url("../fonts/Manrope-ExtraBold.ttf") format("ttf");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-SemiBold.ttf") format("ttf");
-  font-weight: 600;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Medium.ttf") format("ttf");
-  font-weight: 500;
-  font-style: normal;
-}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, button, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
   vertical-align: baseline;
-  line-height: normal;
   outline: none;
   text-decoration: none;
 }
@@ -59,9 +16,10 @@ ol, ul {
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 23px;
   font-weight: 400;
   font-style: normal;
 }
@@ -80,5 +38,332 @@ body {
 }
 
 .container {
-  padding: 0 8.34%;
+  padding: 0 19.79%;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2F3132;
+}
+.header__img {
+  width: 150px;
+  height: 45px;
+}
+.header__list {
+  display: flex;
+}
+.header__item {
+  padding: 0 21px;
+  border-right: 1px solid #494949;
+}
+.header__item:last-child {
+  padding: 0 21px;
+  border: none;
+}
+.header__link {
+  position: relative;
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  padding: 7px 0;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  font-style: normal;
+}
+.header__link:hover:after, .header__link:focus::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+.work-productively {
+  background-color: #E0E1E2;
+  text-align: center;
+  padding-bottom: 80px;
+}
+.work-productively__wrp {
+  position: relative;
+}
+.work-productively__title {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 900;
+  font-style: normal;
+}
+.work-productively__img {
+  max-width: 1160px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+.work-productively__text::after {
+  content: "";
+  display: block;
+  margin: 49px auto 0;
+  width: 40px;
+  height: 40px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  border-bottom: 3px solid #FF2947;
+  border-right: 3px solid #FF2947;
+}
+
+.without-wires {
+  background-color: #EDEDED;
+  text-align: center;
+  padding: 80px 0 143px;
+  background-image: url(./../img/front.png), url(./../img/left.png);
+  background-repeat: no-repeat;
+  background-position: bottom 85px left 22%, bottom 75px right 27%;
+}
+.without-wires__title {
+  margin: 35px auto;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 900;
+  font-style: normal;
+}
+.without-wires__text {
+  max-width: 761px;
+  margin: 0 auto 14px;
+}
+.without-wires__num {
+  color: #C4C4C4;
+  font-size: 300px;
+  line-height: 351px;
+  font-weight: 900;
+  font-style: normal;
+}
+.without-wires__num span {
+  vertical-align: top;
+  font-size: 96px;
+  line-height: 112px;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.any-table {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.any-table__title {
+  margin: 0 auto 35px;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 900;
+  font-style: normal;
+}
+.any-table__text {
+  max-width: 761px;
+  margin: 0 auto 50px;
+}
+.any-table__wrp {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.any-table__img {
+  margin: 50px auto 39px;
+}
+.any-table__subtitle {
+  margin: 0 0 13px 0;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 900;
+  font-style: normal;
+}
+.any-table__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 32px;
+}
+.any-table__list::after {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+}
+.any-table__list::before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  transform: rotate(135deg);
+  cursor: pointer;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+}
+.any-table__item {
+  margin: 0 24px;
+  cursor: pointer;
+}
+.any-table__icon {
+  border-radius: 25px;
+}
+
+.effectiveness {
+  padding: 15px 25px;
+  border: 1px solid black;
+}
+.effectiveness__title {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 900;
+  font-style: normal;
+}
+.effectiveness__text {
+  max-width: 186px;
+}
+
+.multiple-devices {
+  padding: 100px 0 870px;
+  background-color: #EDEDED;
+  background-image: url(./../img/lifestyle.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.multiple-devices__title {
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 900;
+  font-style: normal;
+}
+.multiple-devices__text {
+  max-width: 958px;
+  margin: 0 auto 64px;
+}
+.multiple-devices__list {
+  display: flex;
+  justify-content: center;
+}
+.multiple-devices__item {
+  max-width: 315px;
+  padding: 0 36px;
+  border-right: 1px solid black;
+}
+.multiple-devices__item:last-child {
+  border: none;
+}
+.settings {
+  padding: 100px 0 240px;
+  background-color: #EDEDED;
+  text-align: center;
+  align-content: center;
+}
+.settings__title {
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 900;
+  font-style: normal;
+}
+.settings__text {
+  max-width: 958px;
+  margin: 0 auto 72px;
+}
+.settings__img {
+  margin: 0 auto;
+  max-width: 1171px;
+  min-height: 698px;
+  background-image: url(./../img/mouse-desctop.png);
+  position: relative;
+}
+.settings__wrp {
+  position: absolute;
+  background-color: #C4C4C4;
+  width: 749px;
+  bottom: -142px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 38px 45px 29px;
+}
+.settings__list {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  margin: 0 0 26px;
+}
+.settings__applications {
+  color: white;
+}
+
+.more-faster {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.more-faster__inner {
+  display: flex;
+  justify-content: center;
+}
+.more-faster__img {
+  max-width: 655px;
+  max-height: 557px;
+}
+.more-faster__wrp {
+  width: 654px;
+  padding: 37px;
+  box-sizing: border-box;
+  text-align: left;
+  align-self: center;
+}
+.more-faster__wrp--align-right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.more-faster__title {
+  text-transform: uppercase;
+  margin: 0 0 28px;
+  max-width: 281px;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 900;
+  font-style: normal;
+}
+.more-faster__text {
+  max-width: 400px;
+}
+
+.footer {
+  background-color: #2F3132;
+  text-align: center;
+  padding: 47px 0 71px;
+}
+.footer__text {
+  max-width: 170px;
+  margin: 0 auto;
+  color: #C7C8C8;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  font-style: normal;
 }/*# sourceMappingURL=style.css.map */

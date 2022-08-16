@@ -1,0 +1,71 @@
+.any-table {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    &__title {
+        margin: 0 auto 35px;
+        text-transform: uppercase;
+
+        @include font(36px, 42px, 900);
+    }
+
+    &__text {
+        max-width: 761px;
+        margin: 0 auto 50px;
+    }
+
+    &__wrp {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    &__img {
+        margin: 50px auto 39px;
+    }
+
+    &__subtitle {
+        margin: 0 0 13px 0;
+
+        @include font($font-weight: 900);
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 32px;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 13px;
+            height: 13px;
+            transform: rotate(-45deg);
+            cursor: pointer;
+            border-bottom: 3px solid black;
+            border-right: 3px solid black;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            width: 13px;
+            height: 13px;
+            transform: rotate(135deg);
+            cursor: pointer;
+            border-bottom: 3px solid black;
+            border-right: 3px solid black;
+        }
+    }
+
+    &__item {
+        margin: 0 24px;
+        cursor: pointer;
+    }
+
+    &__icon {
+        border-radius: 25px;
+    }
+}

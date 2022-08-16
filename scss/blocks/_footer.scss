@@ -1,0 +1,13 @@
+.footer {
+    background-color: $header-footer-bcg;
+    text-align: center;
+    padding: 47px 0 71px;
+
+    &__text {
+        max-width: 170px;
+        margin: 0 auto;
+        color: $footer-text;
+
+        @include font(14px, 16px);
+    }
+}

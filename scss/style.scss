@@ -1,5 +1,14 @@
 @import './variables';
 @import './mixins';
-@import './font';
 @import './reset';
 @import './general';
+
+@import './blocks/header';
+@import './blocks/work-productively';
+@import './blocks/without-wires';
+@import './blocks/any-table';
+@import './blocks/effectiveness';
+@import './blocks/multiple-devices';
+@import './blocks/settings';
+@import './blocks/more-faster';
+@import './blocks/footer';
