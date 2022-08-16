@@ -1,0 +1,31 @@
+.without-wires {
+    background-color: $without-wires-bcg;
+    text-align: center;
+    padding: 80px 0 143px;
+    background-image: url(./../img/front.png), url(./../img/left.png);
+    background-repeat: no-repeat;
+    background-position: bottom 85px left 22%, bottom 75px right 27%;
+
+    &__title {
+        margin: 35px auto;
+        text-transform: uppercase;
+
+        @include font(36px, 42px, 900);
+    }
+
+    &__text {
+        max-width: 761px;
+        margin: 0 auto 14px;
+    }
+
+    &__num {
+        color: $without-wires-num;
+
+        @include font(300px, 351px, 900);
+
+        & span {
+            vertical-align: top;
+            @include font(96px, 112px, 900);
+        }
+    }
+}

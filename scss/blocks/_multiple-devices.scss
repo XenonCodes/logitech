@@ -1,0 +1,37 @@
+.multiple-devices {
+    padding: 100px 0 870px;
+    background-color: $without-wires-bcg;
+    background-image: url(./../img/lifestyle.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    text-align: center;
+
+    &__title {
+        margin: 0 0 35px;
+        text-transform: uppercase;
+
+        @include font(36px, 42px, 900);
+    }
+
+    &__text {
+        max-width: 958px;
+        margin: 0 auto 64px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        max-width: 315px;
+        padding: 0 36px;
+        border-right: 1px solid black;
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    &__item-text {}
+}
