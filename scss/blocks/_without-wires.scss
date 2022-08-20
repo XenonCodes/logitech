@@ -4,18 +4,57 @@
     padding: 80px 0 143px;
     background-image: url(./../img/front.png), url(./../img/left.png);
     background-repeat: no-repeat;
-    background-position: bottom 85px left 22%, bottom 75px right 27%;
+    background-position: bottom 85px left 16%, bottom 75px right 15%;
+
+    @include tablet-mid {
+        padding: 44px 0 69px;
+        background-position: bottom 54px left, bottom 37px right;
+    }
+
+    @include tablet {
+        padding: 80px 0 461px;
+        background-image: url(./../img/left.png);
+        background-position: bottom 85px center;
+    }
+
+    @include mobile-mid {
+        padding: 52px 0 236px;
+        background-position: bottom 30px center;
+        background-size: 100%;
+    }
 
     &__title {
         margin: 35px auto;
         text-transform: uppercase;
 
         @include font(36px, 42px, 900);
+
+        @include tablet {
+            @include font(40px, 46px, 900);
+        }
+
+        @include mobile-mid {
+            margin: 27px auto 20px;
+            @include font(20px, 23px, 900);
+        }
     }
 
     &__text {
         max-width: 761px;
         margin: 0 auto 14px;
+
+        @include tablet {
+            margin: 0 auto 76px;
+
+            @include font(24px, 28px);
+        }
+
+        @include mobile-mid {
+            max-width: 275px;
+            margin: 0 auto 31px;
+
+            @include font(14px, 16px);
+        }
     }
 
     &__num {
@@ -26,6 +65,22 @@
         & span {
             vertical-align: top;
             @include font(96px, 112px, 900);
+
+            @include tablet {
+                @include font(150px, 157px, 900);
+            }
+
+            @include mobile-mid {
+                @include font(60px, 70px, 900);
+            }
+        }
+
+        @include tablet {
+            @include font(150px, 157px, 900);
+        }
+
+        @include mobile-mid {
+            @include font(60px, 70px, 900);
         }
     }
 }

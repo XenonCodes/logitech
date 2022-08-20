@@ -19,5 +19,21 @@ body {
 }
 
 .container {
-    padding: 0 calc(50% - 30.21%);
+    //desktop 1157px
+    padding: 0 calc(50% - 30.13%);
+
+    @include tablet-mid {
+        //tablet mid 1157px
+        padding: 0 calc(50% - 45.19%);
+    }
+
+    @include tablet {
+        //tablet 766px
+        padding: 0 calc(50% - 42.84%);
+    }
+
+    @include mobile {
+        //mobile 315px
+        padding: 0 calc(50% - 42%);
+    }
 }

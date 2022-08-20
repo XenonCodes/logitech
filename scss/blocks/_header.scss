@@ -4,22 +4,74 @@
     justify-content: space-between;
     align-items: center;
     background-color: $header-footer-bcg;
+    position: relative;
+
+    @include tablet {
+        padding-top: 54px;
+        background-color: $work-productively-bcg;
+        justify-content: center;
+    }
+
+    @include mobile-mid {
+        padding-top: 25px;
+
+    }
 
     &__img {
-        width: 150px;
+        background-image: url(./../img/logo.png);
+        background-size: cover;
+        min-width: 150px;
         height: 45px;
+
+        @include tablet {
+            background-image: url(./../img/logo-dark.png);
+            min-width: 240px;
+            height: 72px;
+        }
+
+        @include mobile-mid {
+            min-width: 130px;
+            height: 39px;
+        }
+    }
+
+    &__button {
+        display: none;
+        cursor: pointer;
+
+        @include tablet {
+            display: block;
+            position: absolute;
+            right: calc(50% - 42.84%);
+        }
+
+        @include mobile-mid {
+            & svg {
+                width: 30px;
+                height: 16px;
+            }
+
+            right: calc(50% - 42%);
+        }
     }
 
     &__list {
         display: flex;
+        align-items: center;
+
+        @include tablet {
+            display: none;
+        }
     }
 
     &__item {
+        max-width: 160px;
+        text-align: center;
         padding: 0 21px;
         border-right: 1px solid $header-line;
 
         &:last-child {
-            padding: 0 21px;
+            padding: 0 0 0 21px;
             border: none;
         }
     }

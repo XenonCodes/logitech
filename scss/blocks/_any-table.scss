@@ -3,32 +3,77 @@
     padding-top: 100px;
     padding-bottom: 50px;
 
+    @include tablet-mid {
+        padding-top: 70px;
+        padding-bottom: 35px;
+    }
+
     &__title {
         margin: 0 auto 35px;
         text-transform: uppercase;
 
         @include font(36px, 42px, 900);
+        
+        @include tablet {
+            @include font(40px, 46px, 900);
+        }
+
+        @include mobile-mid {
+            margin: 0 auto 20px;
+
+            @include font(20px, 23px, 900);
+        }
     }
 
     &__text {
         max-width: 761px;
         margin: 0 auto 50px;
+
+        @include tablet {
+            @include font(24px, 28px);
+        }
+
+        @include mobile-mid {
+            max-width: 275px;
+            margin: 0 auto 30px;
+
+            @include font(14px, 16px);
+        }
     }
 
     &__wrp {
         display: flex;
         justify-content: center;
         gap: 32px;
+
+        @include mobile-mid {
+            gap: 6px;
+        }
     }
 
     &__img {
         margin: 50px auto 39px;
+        max-width: 1260px;
+        
+        @include tablet-mid {
+            width: 100%;
+        }
+        @include tablet {
+            margin: 50px auto;
+        }
+
+        @include mobile-mid {
+            margin: 27px auto;
+        }
     }
 
     &__subtitle {
         margin: 0 0 13px 0;
 
         @include font($font-weight: 900);
+        @include tablet {
+            margin: 0 0 21px 0;
+        }
     }
 
     &__list {
@@ -58,14 +103,34 @@
             border-bottom: 3px solid black;
             border-right: 3px solid black;
         }
+
+        @include tablet {
+            margin: 0 0 19px;
+        }
     }
 
     &__item {
-        margin: 0 24px;
+        margin: 0 24px 0 0;
         cursor: pointer;
+
+        &:first-child {
+            margin: 0 24px;
+
+            @include mobile-mid {
+                margin: 0 18px;
+            }
+        }
+
+        @include mobile-mid {
+            margin: 0 18px 0 0;
+        }
     }
 
     &__icon {
         border-radius: 25px;
+
+        @include mobile-mid {
+            width: 34px;
+        }
     }
 }

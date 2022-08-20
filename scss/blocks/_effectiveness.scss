@@ -2,11 +2,35 @@
     padding: 15px 25px;
     border: 1px solid black;
 
+    @include mobile-mid {
+        padding: 14px;
+    }
+
     &__title {
         @include font(36px, 42px, 900);
+
+        @include tablet {
+            @include font(40px, 46px, 900);
+        }
+
+        @include mobile-mid {
+            @include font(20px, 23px, 900);
+        }
     }
 
     &__text {
         max-width: 186px;
+
+        @include tablet {
+            max-width: 236px;
+
+            @include font(24px, 28px);
+        }
+
+        @include mobile-mid {
+            max-width: 130px;
+            
+            @include font(14px, 16px);
+        }
     }
 }

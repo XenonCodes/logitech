@@ -1,19 +1,38 @@
 .settings {
-    padding: 100px 0 240px;
+    padding-top: 100px;
+    padding-bottom: 240px;
     background-color: $without-wires-bcg;
     text-align: center;
     align-content: center;
+
+    @include tablet-mid {
+        padding-top: 70px;
+        padding-bottom: 211px;
+    }
 
     &__title {
         margin: 0 0 35px;
         text-transform: uppercase;
 
         @include font(36px, 42px, 900);
+
+        @include mobile-mid {
+            margin: 0 0 20px;
+
+            @include font(20px, 23px, 900);
+        }
     }
 
     &__text {
         max-width: 958px;
         margin: 0 auto 72px;
+
+        @include mobile-mid {
+            max-width: 275px;
+            margin: 0 auto 35px;
+
+            @include font(14px, 16px);
+        }
     }
 
     &__img {
@@ -21,7 +40,19 @@
         max-width: 1171px;
         min-height: 698px;
         background-image: url(./../img/mouse-desctop.png);
+        background-size: contain;
+        background-repeat: no-repeat;
         position: relative;
+
+        @include tablet {
+            background-image: url(./../img/mouse.png);
+            background-position: center;
+        }
+
+        @include mobile-mid {
+            min-height: auto;
+            height: 404px;
+        }
     }
 
     &__wrp {
@@ -32,6 +63,12 @@
         left: 50%;
         transform: translate(-50%);
         padding: 38px 45px 29px;
+
+        @include mobile-mid {
+            bottom: -210px;
+            width: 100%;
+            padding: 38px 10px 29px;
+        }
     }
 
     &__list {
@@ -39,9 +76,32 @@
         justify-content: center;
         gap: 36px;
         margin: 0 0 26px;
+
+        @include mobile-mid {
+            margin: 0 0 20px;
+            gap: 20px;
+        }
+    }
+
+    &__item{
+        & svg {
+            width: 22px;
+            height: 22px;
+        }
+        & img {
+            width: 22px;
+        }
+    }
+
+    &__icon {
+        width: 49px !important;
     }
 
     &__applications {
         color: white;
+
+        @include mobile-mid {
+            @include font(14px, 16px);
+        }
     }
 }
