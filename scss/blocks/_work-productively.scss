@@ -3,31 +3,55 @@
     text-align: center;
     padding-bottom: 80px;
 
+    @include tablet-mid {
+        padding-bottom: 56px;
+    }
+
+    @include tablet {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+
+    @include mobile-mid {
+        padding-top: 50px;
+        padding-bottom: 45px;
+    }
+
     &__wrp {
         position: relative;
     }
 
     &__title {
         position: absolute;
-        top: 80px;
+        top: 60px;
         left: 0;
         right: 0;
         margin: 0 auto;
         text-transform: uppercase;
 
         @include font(36px, 42px, 900);
+
+        @include tablet {
+            top: 0;
+
+            @include font(40px, 46px, 900);
+        }
+
+        @include mobile-mid {
+            @include font(20px, 23px, 900);
+        }
     }
 
     &__img {
-        max-width: 1160px;
         margin: 0 auto;
         width: 100%;
-        height: auto;
+
+        @include mobile-mid {
+            margin: 0 auto 67px;
+        }
     }
 
     &__text {
-
-
         &::after {
             content: "";
             display: block;
@@ -39,6 +63,25 @@
 
             border-bottom: 3px solid $work-productively-arrow;
             border-right: 3px solid $work-productively-arrow;
+
+            @include mobile-mid {
+                width: 20px;
+                height: 20px;
+                margin: 23px auto 0;
+            }
+        }
+
+        @include tablet {
+            margin: 0 auto;
+            max-width: 585px;
+
+            @include font(24px, 28px);
+        }
+
+        @include mobile-mid {
+            max-width: 275px;
+            
+            @include font(14px, 16px);
         }
     }
 }

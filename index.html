@@ -14,7 +14,12 @@
 
 <body>
     <header class="header container">
-        <img class="header__img" src="./img/logo.png" alt="logo">
+        <div class="header__img"></div>
+        <button class="header__button" type="button">
+            <svg width="61" height="40" viewBox="0 0 61 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M61 36L-3.41018e-06 36M60.9999 20L1.03991e-05 20M61 4L7.38502e-05 4" stroke="#2F3132" stroke-width="8"/>
+                </svg>                
+        </button>
         <nav>
             <ul class="header__list">
                 <li class="header__item">
@@ -41,7 +46,7 @@
 
     <main>
 
-        <section class="work-productively container">
+        <section class="work-productively">
             <div class="work-productively__wrp">
                 <h1 class="work-productively__title">работайте продуктивнее</h1>
                 <img class="work-productively__img" src="./img/mx-master1.png" alt="MX-Master mouse">
@@ -101,7 +106,7 @@
                 поверхности, даже на стекле.</p>
         </Section>
 
-        <section class="multiple-devices">
+        <section class="multiple-devices container">
             <h2 class="multiple-devices__title">одновременно с нескольких устройств</h2>
             <p class="multiple-devices__text">С технологией Flow вы сможете работать одновременно на нескольких
                 компьютерах, мгновенно
@@ -129,7 +134,7 @@
             </ul>
         </section>
 
-        <section class="settings">
+        <section class="settings container">
             <h2 class="settings__title">с индивидуальными настройками</h2>
             <p class="settings__text">Мышь MX Master 3 адаптируется под ваши рабочие процессы. Благодаря
                 индивидуальным настройкам, вы сможете настроить кнопки и жесты практически
@@ -137,7 +142,7 @@
             <div class="settings__img">
                 <div class="settings__wrp">
                     <ul class="settings__list">
-                        <li>
+                        <li class="settings__item">
                             <svg width="36" height="35" viewBox="0 0 36 35" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M33.6158 1.48242H1.48376V32.8196H33.6158V1.48242Z" fill="#001D26" />
@@ -149,7 +154,7 @@
                                     fill="#00C8FF" />
                             </svg>
                         </li>
-                        <li>
+                        <li class="settings__item">
                             <svg width="36" height="35" viewBox="0 0 36 35" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M33.9041 1.48242H1.77197V32.8196H33.9041V1.48242Z" fill="#2A0034" />
@@ -161,10 +166,10 @@
                                     fill="#EA77FF" />
                             </svg>
                         </li>
-                        <li>
-                            <img src="./img/browser.png" alt="icon">
+                        <li class="settings__item">
+                            <img class="settings__icon" src="./img/browser.png" alt="icon">
                         </li>
-                        <li>
+                        <li class="settings__item">
                             <svg width="39" height="35" viewBox="0 0 39 35" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -183,7 +188,7 @@
                                     fill="white" />
                             </svg>
                         </li>
-                        <li>
+                        <li class="settings__item">
                             <svg width="40" height="35" viewBox="0 0 40 35" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -203,7 +208,7 @@
                                     fill="white" />
                             </svg>
                         </li>
-                        <li>
+                        <li class="settings__item">
                             <svg width="37" height="33" viewBox="0 0 37 33" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -230,7 +235,7 @@
                                     fill="white" />
                             </svg>
                         </li>
-                        <li>
+                        <li class="settings__item">
                             <img src="./img/media.png" alt="icon">
                         </li>
                     </ul>

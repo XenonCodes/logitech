@@ -1,26 +1,67 @@
 .multiple-devices {
-    padding: 100px 0 870px;
+    padding-top: 100px;
+    padding-bottom: 870px;
     background-color: $without-wires-bcg;
     background-image: url(./../img/lifestyle.png);
     background-position: bottom;
     background-repeat: no-repeat;
     text-align: center;
 
+    @include tablet-mid {
+        padding-top: 70px;
+        padding-bottom: 650px;
+        background-size: 100%;
+    }
+
+    @include tablet {
+        padding-bottom: 496px;
+    }
+
+    @include mobile-mid {
+        padding-bottom: 218px;
+    }
+
     &__title {
         margin: 0 0 35px;
         text-transform: uppercase;
 
         @include font(36px, 42px, 900);
+
+        @include tablet {
+            @include font(40px, 46px, 900);
+        }
+
+        @include mobile-mid {
+            margin: 0 0 20px;
+
+            @include font(20px, 23px, 900);
+        }
     }
 
     &__text {
         max-width: 958px;
         margin: 0 auto 64px;
+
+        @include tablet {
+            @include font(24px, 28px);
+        }
+
+        @include mobile-mid {
+            max-width: 275px;
+            margin: 0 auto 36px;
+
+            @include font(14px, 16px);
+        }
     }
 
     &__list {
         display: flex;
         justify-content: center;
+
+        @include mobile-mid {
+            align-items: flex-start;
+            flex-direction: column;
+        }
     }
 
     &__item {
@@ -30,6 +71,13 @@
 
         &:last-child {
             border: none;
+        }
+
+        @include mobile-mid {
+            margin-bottom: 16px;
+            border: none;
+
+            @include font(14px, 16px);
         }
     }
 
